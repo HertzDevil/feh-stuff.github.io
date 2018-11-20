@@ -26,6 +26,7 @@ module.exports = [
     name: "Atk/Def Link 1",
     spCost: 60,
     icon: "46-2",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Def+2 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -33,6 +34,7 @@ module.exports = [
     spCost: 120,
     icon: "46-3",
     prev: ["Atk/Def Link 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Def+4 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -40,12 +42,14 @@ module.exports = [
     spCost: 240,
     icon: "46-4",
     prev: ["Atk/Def Link 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Def+6 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
     name: "Atk/Res Link 1",
     spCost: 60,
     icon: "53-3",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Res+2 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -53,6 +57,7 @@ module.exports = [
     spCost: 120,
     icon: "53-4",
     prev: ["Atk/Res Link 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Res+4 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -60,12 +65,14 @@ module.exports = [
     spCost: 240,
     icon: "53-5",
     prev: ["Atk/Res Link 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Res+6 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
     name: "Atk/Spd Link 1",
     spCost: 60,
     icon: "51-11",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Spd+2 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -73,6 +80,7 @@ module.exports = [
     spCost: 120,
     icon: "51-12",
     prev: ["Atk/Spd Link 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Spd+4 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -80,6 +88,7 @@ module.exports = [
     spCost: 240,
     icon: "52-0",
     prev: ["Atk/Spd Link 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Spd+6 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -242,7 +251,7 @@ module.exports = [
     name: "Cancel Affinity 1",
     spCost: 50,
     icon: "22-3",
-    exclude: [{weaponType: "Tome"}, {weaponType:"Staff"}],
+    exclude: [{colorType: "Red", weaponType: "Bow"}, {colorType: "Blue", weaponType: "Bow"}, {colorType: "Green", weaponType: "Bow"}, {colorType: "Red", weaponType: "Dagger"}, {colorType: "Blue", weaponType: "Dagger"}, {colorType: "Green", weaponType: "Dagger"}, {weaponType: "Tome"}, {weaponType:"Staff"}],
     effect: "Any weapon triangle affinity granted by unit's skills is negated. Also negates any weapon triangle affinity granted by foe's skills."
   },
   {
@@ -250,7 +259,7 @@ module.exports = [
     spCost: 100,
     icon: "22-4",
     prev: ["Cancel Affinity 1"],
-    exclude: [{weaponType: "Tome"}, {weaponType:"Staff"}],
+    exclude: [{colorType: "Red", weaponType: "Bow"}, {colorType: "Blue", weaponType: "Bow"}, {colorType: "Green", weaponType: "Bow"}, {colorType: "Red", weaponType: "Dagger"}, {colorType: "Blue", weaponType: "Dagger"}, {colorType: "Green", weaponType: "Dagger"}, {weaponType: "Tome"}, {weaponType:"Staff"}],
     effect: "Any weapon triangle affinity granted by unit's skills is negated. If affinity disadvantage exists, weapon triangle affinity granted by foe's skills is negated."
   },
   {
@@ -258,7 +267,7 @@ module.exports = [
     spCost: 200,
     icon: "22-5",
     prev: ["Cancel Affinity 2"],
-    exclude: [{weaponType: "Tome"}, {weaponType:"Staff"}],
+    exclude: [{colorType: "Red", weaponType: "Bow"}, {colorType: "Blue", weaponType: "Bow"}, {colorType: "Green", weaponType: "Bow"}, {colorType: "Red", weaponType: "Dagger"}, {colorType: "Blue", weaponType: "Dagger"}, {colorType: "Green", weaponType: "Dagger"}, {weaponType: "Tome"}, {weaponType:"Staff"}],
     effect: "Any weapon triangle affinity granted by unit's skills is negated. If affinity disadvantage exists, weapon triangle affinity granted by foe's skills is reversed."
   },
   {
@@ -402,6 +411,7 @@ module.exports = [
     name: "Def Feint 1",
     spCost: 60,
     icon: "44-7",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a Rally Assist skill is used by unit or targets unit, inflicts Def-3 on foes in cardinal directions of unit through their next action."
   },
   {
@@ -409,6 +419,7 @@ module.exports = [
     spCost: 120,
     icon: "44-8",
     prev: ["Def Feint 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a Rally Assist skill is used by unit or targets unit, inflicts Def-5 on foes in cardinal directions of unit through their next action."
   },
   {
@@ -416,12 +427,14 @@ module.exports = [
     spCost: 240,
     icon: "44-9",
     prev: ["Def Feint 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a Rally Assist skill is used by unit or targets unit, inflicts Def-7 on foes in cardinal directions of unit through their next action."
   },
   {
     name: "Def/Res Link 1",
     spCost: 60,
     icon: "42-10",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Def/Res+2 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -429,6 +442,7 @@ module.exports = [
     spCost: 120,
     icon: "42-11",
     prev: ["Def/Res Link 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Def/Res+4 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -436,6 +450,7 @@ module.exports = [
     spCost: 240,
     icon: "42-12",
     prev: ["Def/Res Link 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Def/Res+6 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -492,6 +507,7 @@ module.exports = [
     name: "Dull Close 1",
     spCost: 60,
     icon: "44-4",
+    include: [{weaponType:"Sword"}, {weaponType:"Axe"}, {weaponType:"Lance"}, {weaponType:"Breath"}],
     effect: "At start of combat, if unit's HP ≥ 100% and foe uses sword, lance, axe, or dragonstone, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat."
   },
   {
@@ -499,6 +515,7 @@ module.exports = [
     spCost: 120,
     icon: "44-5",
     prev: ["Dull Close 1"],
+    include: [{weaponType:"Sword"}, {weaponType:"Axe"}, {weaponType:"Lance"}, {weaponType:"Breath"}],
     effect: "At start of combat, if unit's HP ≥ 50% and foe uses sword, lance, axe, or dragonstone, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat."
   },
   {
@@ -506,6 +523,7 @@ module.exports = [
     spCost: 240,
     icon: "44-6",
     prev: ["Dull Close 2"],
+    include: [{weaponType:"Sword"}, {weaponType:"Axe"}, {weaponType:"Lance"}, {weaponType:"Breath"}],
     effect: "If foe uses sword, lance, axe, or dragonstone, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat."
   },
   {
@@ -1162,6 +1180,7 @@ module.exports = [
     name: "Spd Feint 1",
     spCost: 60,
     icon: "43-0",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a Rally Assist skill is used by unit or targets unit, inflicts Spd-3 on foes in cardinal directions of unit through their next action."
   },
   {
@@ -1169,6 +1188,7 @@ module.exports = [
     spCost: 120,
     icon: "43-1",
     prev: ["Spd Feint 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a Rally Assist skill is used by unit or targets unit, inflicts Spd-5 on foes in cardinal directions of unit through their next action."
   },
   {
@@ -1176,12 +1196,14 @@ module.exports = [
     spCost: 240,
     icon: "43-2",
     prev: ["Spd Feint 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a Rally Assist skill is used by unit or targets unit, inflicts Spd-7 on foes in cardinal directions of unit through their next action."
   },
   {
     name: "Spd/Res Link 1",
     spCost: 60,
     icon: "50-3",
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Res+2 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -1189,6 +1211,7 @@ module.exports = [
     spCost: 120,
     icon: "50-4",
     prev: ["Spd/Res Link 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Res+4 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
@@ -1196,6 +1219,7 @@ module.exports = [
     spCost: 240,
     icon: "50-5",
     prev: ["Spd/Res Link 2"],
+    exclude: [{weaponType: "Staff"}],
     effect: "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Res+6 to unit and target ally or unit and targeting ally for 1 turn."
   },
   {
