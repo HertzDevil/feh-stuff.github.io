@@ -246,6 +246,7 @@ module.exports = [
     spCost: 100,
     icon: "46-0",
     prev: ["Steady Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "Grants Def/Res+2 during combat when this unit is attacked."
   },
   {
@@ -253,6 +254,7 @@ module.exports = [
     spCost: 200,
     icon: "46-1",
     prev: ["Bracing Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     last: true,
     effect: "Grants Def/Res+4 during combat when this unit is attacked."
   },
@@ -999,6 +1001,7 @@ module.exports = [
     spCost: 100,
     icon: "43-3",
     prev: ["Fierce Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "Grants Atk/Spd+2 during combat when this unit is attacked."
   },
   {
@@ -1006,6 +1009,7 @@ module.exports = [
     spCost: 200,
     icon: "43-4",
     prev: ["Kestrel Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     last: true,
     effect: "Grants Atk/Spd+4 during combat when this unit is attacked."
   },
@@ -1048,6 +1052,7 @@ module.exports = [
     spCost: 100,
     icon: "38-7",
     prev: ["Warding Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "Grants Atk/Res+2 during combat when this unit is attacked."
   },
   {
@@ -1055,6 +1060,7 @@ module.exports = [
     spCost: 200,
     icon: "38-8",
     prev: ["Mirror Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     last: true,
     effect: "Grants Atk/Res+4 during combat when this unit is attacked."
   },
@@ -1262,6 +1268,7 @@ module.exports = [
     spCost: 100,
     icon: "49-6",
     prev: ["Steady Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "Grants Spd/Def+2 during combat when this unit is attacked."
   },
   {
@@ -1269,6 +1276,7 @@ module.exports = [
     spCost: 200,
     icon: "49-7",
     prev: ["Sturdy Posture 1"],
+    exclude: [{weaponType: "Staff"}],
     last: true,
     effect: "Grants Spd/Def+4 during combat when this unit is attacked."
   },
@@ -1315,6 +1323,7 @@ module.exports = [
     spCost: 100,
     icon: "38-1",
     prev: ["Fierce Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "Grants Atk/Def+2 during combat when this unit is attacked."
   },
   {
@@ -1322,6 +1331,7 @@ module.exports = [
     spCost: 200,
     icon: "38-2",
     prev: ["Sturdy Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     last: true,
     effect: "Grants Atk/Def+4 during combat when this unit is attacked."
   },
@@ -1355,6 +1365,7 @@ module.exports = [
     spCost: 100,
     icon: "39-5",
     prev: ["Darting Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     effect: "Grants Spd/Res+2 during combat when this unit is attacked."
   },
   {
@@ -1362,6 +1373,7 @@ module.exports = [
     spCost: 200,
     icon: "39-6",
     prev: ["Swift Stance 1"],
+    exclude: [{weaponType: "Staff"}],
     last: true,
     effect: "Grants Spd/Res+4 during combat when this unit is attacked."
   },
